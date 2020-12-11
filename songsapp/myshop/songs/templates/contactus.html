@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h3>contactus and enquiry</h3>
+    <hr>
+    <p>Please fill in the form and click on submit button</p>
+<form name="form" action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">submit</button><br><br>
+</form>
+</div>
+{% endblock %}    

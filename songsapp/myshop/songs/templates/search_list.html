@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h3>search results</h3>
+    <h4>this page is for displaying search results</h4>
+    <hr>
+    {% for i in match1 %}
+    Movie={{i.title}} Director={{i.director}} Year={{i.year}}<br>{% endfor %}
+    {% for i in match2 %}
+    Audio song={{i.title}} Movie={{i.movie.title}}{% endfor %}<br>
+    {% for i in match3 %}
+    Video song={{i.title}} Movie={{i.movie.title}}{% endfor %}<br>
+
+</div>
+
+{% endblock %}
