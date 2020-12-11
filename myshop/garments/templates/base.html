@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mygarments shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<img src = "media/banner1.png" alt = "mygarmentsshop" width = 100%/>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">mygarments shop.com</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">Contact us</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Shirts
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/formal_shirts">FormalShirts</a>
+        <a class="dropdown-item" href="#">CasualShirts</a>
+        <a class="dropdown-item" href="#">T-Shirts</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        BottomWear
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Trousers</a>
+        <a class="dropdown-item" href="#">jeans</a>
+        <a class="dropdown-item" href="#">Track pants</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+{% block content %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<h3>ph no: 9989753024</h3>
+<from name = "form" action = "" method = "POST" enctype="multipart/form-data">
+{% csrf_token %}
+{{form.as_p}}
+<button type = 'submit'>Submit</button> <br> <br>
+</from>
+</div>
+{% endblock %}
+
